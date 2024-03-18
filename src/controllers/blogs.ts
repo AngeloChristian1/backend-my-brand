@@ -26,7 +26,7 @@ interface MulterRequest extends Request {
 export const uploadBlog = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const body = req.body
-    console.log("my body",req.body)
+    
     let { title,subtitle, category, content, timeToRead} = req.body;
     const result = await blogSchema.validateAsync(req.body)
     if(!title || !content || !subtitle || !category || !content){

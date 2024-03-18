@@ -24,7 +24,7 @@ describe('Blog Controllers', () => {
     userData.password  = hashedPassword.toString()
     adminToken = generateToken(userData)
   
-    console.log("adminToken here",adminToken)
+    // console.log("adminToken here",adminToken)
   })
   
   let next: express.NextFunction;
